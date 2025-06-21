@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaInstagram } from 'react-icons/fa';
-import tryImage from './prince.png'
+// import tryImage from './prince.png'
 
 const About = () => {
     return (
@@ -10,7 +10,7 @@ const About = () => {
                 id='about'
                 className='flex relative items-center snap-start h-screen gap-100'>
                 <div className="bg-white/10 backdrop-blur-2xl ml-8 p-4 rounded-full shadow-md border border-white/20">
-                    <img src={tryImage} alt="..." className=" rounded-full w-130 h-130 object-[80%_20%] object-cover " />
+                    <img src="/prince.PNG" alt="..." className=" rounded-full w-130 h-130 object-[80%_20%] object-cover " />
 
 
                 </div>

@@ -17,7 +17,7 @@ const About = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex justify-center gap-6 md:gap-20 mt-6 md:ml-27 md:absolute md:bottom-30">
+      <div className="flex justify-center gap-6 md:gap-20 mt-3 md:ml-27 md:absolute md:bottom-30">
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-3xl md:text-4xl text-gray-700 hover:text-black transition" />
         </a>

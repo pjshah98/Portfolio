@@ -15,7 +15,7 @@ const About = () => {
 
                 </div>
 
-                <div className="flex ml-30 absolute bottom-30 justify-center gap-20 mt-6">
+                <div className="flex ml-27 absolute bottom-30 justify-center gap-20 mt-6">
                     <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-4xl text-gray-700 hover:text-black transition" />
                     </a>

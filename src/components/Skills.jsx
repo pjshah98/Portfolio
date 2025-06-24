@@ -22,8 +22,8 @@ const Skills = () => {
     return (
         <section id='skills'
             className='snap-start relative flex flex-col justify-center h-screen '>
-            <h4 className='text-7xl ml-72'>skills I carry💪</h4>
-            <div className='grid md:grid-cols-2 gap-15 py-25 mx-auto max-w-6xl'>
+            <h4 className='lg:text-7xl text-4xl lg:text-left text-center lg:ml-72'>skills I carry💪</h4>
+            <div className='grid lg:grid-cols-2 gap-15 lg:py-25 py-15 mx-auto max-w-6xl'>
                 {skills.map((skill, index) => (
                     <SkillCard key={index} {...skill} />
                 ))}

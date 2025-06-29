@@ -12,13 +12,15 @@ export default function Hero() {
         </p>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
           <a
-            href="#"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
             View Resume
           </a>
           <a
-            href="#contact"
+            href="mailto:princejshah1@gmail.com"
             className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition"
           >
             Contact Me

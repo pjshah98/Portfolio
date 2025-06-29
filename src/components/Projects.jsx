@@ -24,9 +24,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="snap-start flex flex-col justify-center h-screen py-20 px-6 lg:px-20"
+      className="snap-start mt-35 flex flex-col justify-center h-screen py-20 px-6 lg:px-20"
     >
-      <h2 className="text-4xl lg:text-7xl mt-35 lg:ml-45 text-center lg:text-left mb-10">
+      <h2 className="text-4xl lg:text-7xl mt-35 lg:ml-45  text-center lg:text-left mb-10">
         my projects 🛠️
       </h2>
 

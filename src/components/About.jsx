@@ -10,7 +10,7 @@ const About = () => {
             {/* Profile Image Container */}
             <div className="bg-white/10 backdrop-blur-2xl lg:ml-8 p-4 rounded-full shadow-lg border border-white/20">
                 <img
-                    src="/prince.PNG"
+                    src="/pj.PNG"
                     alt="..."
                     className="rounded-full w-[300px] h-[300px] lg:w-[520px] lg:h-[520px] object-[80%_20%] object-cover"
                 />

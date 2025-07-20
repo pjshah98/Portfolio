@@ -12,7 +12,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
           <a
-            href="/resume.pdf"
+            href="/PrinceUpdatedResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"

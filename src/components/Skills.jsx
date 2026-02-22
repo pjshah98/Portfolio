@@ -21,22 +21,16 @@ const Skills = () => {
     ]
     return (
         <section id='skills'
-            className='snap-start relative flex mt-15 flex-col justify-center h-screen '>
-            <h4 className='lg:text-7xl text-4xl lg:text-left text-center lg:ml-72'>skills I carry💪</h4>
-            <div className='grid lg:grid-cols-2 gap-15 lg:py-25 py-15 mx-auto max-w-6xl'>
+            className='snap-start relative flex min-h-screen flex-col justify-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6'>
+            <h4 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl lg:text-left text-center mb-8 sm:mb-10 lg:mb-12'>skills I carry💪</h4>
+            <div className='grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto w-full pb-20 lg:pb-24'>
                 {skills.map((skill, index) => (
                     <SkillCard key={index} {...skill} />
                 ))}
-
             </div>
-            <div className='flex justify-center'>
-            <div className='absolute bottom-0 '>
+            <div className='absolute bottom-0 left-0 right-0 flex justify-center'>
                 <Footer />
             </div>
-            </div>
-
-
-
         </section>
     )
 }

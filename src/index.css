@@ -8,3 +8,15 @@ html {
 body {
   overflow-x: hidden;
 }
+
+/* Ensure navbar links are visible on desktop (fallback if Tailwind responsive classes don’t apply) */
+@media (min-width: 768px) {
+  .navbar-desktop-links {
+    display: flex !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-desktop-links {
+    display: none !important;
+  }
+}

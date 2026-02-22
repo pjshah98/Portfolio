@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-14 sm:pt-16 lg:snap-y [&::-webkit-scrollbar]:hidden scrollbar-width-none lg:snap-mandatory min-h-screen overflow-x-hidden overflow-y-auto scroll-smooth bg-gradient-to-br from-purple-100 via-blue-100 to-purple-200">
+      <main className="pt-14 sm:pt-16 h-screen overflow-x-hidden overflow-y-auto snap-y snap-mandatory [&::-webkit-scrollbar]:hidden scrollbar-width-none scroll-smooth bg-gradient-to-br from-purple-100 via-blue-100 to-purple-200">
         <Hero />
         <About />
         <Projects />

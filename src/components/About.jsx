@@ -38,11 +38,11 @@ const About = () => {
                     a little bit <br /> about me
                 </h1>
                 <p className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-justify lg:text-left text-gray-700 leading-relaxed">
-                    I’m an aspiring full-stack developer with a strong foundation in frontend development and a growing curiosity for backend technologies. I enjoy creating clean, responsive interfaces that offer smooth user experiences and bring ideas to life through code.
+                    Aspiring Full-Stack Developer with hands-on experience building responsive web applications using JavaScript, HTML, CSS, React, and Firebase. I enjoy translating ideas into clean, user-friendly interfaces and developing features that solve real problems.
                     <br /><br />
-                    My journey in tech is driven by a love for problem-solving and a desire to build meaningful digital tools. I’m always exploring new concepts, frameworks, and best practices to sharpen my skills and expand my capabilities.
+                    I’ve worked on multiple academic and personal projects involving authentication, state management, database integration, and UI/UX design, and I’m actively expanding my backend skills with Node.js and databases.
                     <br /><br />
-                    Beyond coding, I enjoy reading and reflecting—whether it’s a novel or a thought-provoking article, I value learning from different perspectives. This mindset keeps me grounded, inspired, and ready to tackle challenges creatively.
+                    I’m seeking a software development internship where I can contribute to real-world projects, learn from experienced engineers, and grow as a full-stack developer.
                 </p>
             </div>
         </div>

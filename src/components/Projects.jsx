@@ -12,12 +12,12 @@ const Projects = () => {
       livelink: "https://plothole-five.vercel.app/",
     },
     {
-      title: "News App",
+      title: "ShifftBuddy",
       description:
-        "Built a responsive news application that fetches real-time news from an external API. Integrated API endpoints to fetch the latest articles across multiple categories (e.g., sports, technology, health). Implemented a dark mode toggle feature for better user accessibility and visual comfort.",
-      techStack: ["React", "CSS", "API Integration"],
-      githubLink: "https://github.com/pjshah98",
-      livelink: "https://live-link.com",
+        "Offline-first shift handoff app for retail: log tasks and notes locally, sync to Firebase when online. Works without internet after first load. Includes real sign-in and shared tasks across devices, with a sync queue and conflict handling.",
+      techStack: ["React 19", "JavaScript", "Vite", "IndexedDB", "Firebase", "Firestore"],
+      githubLink: "https://github.com/pjshah98/ShifftBuddy",
+      livelink: "https://github.com/pjshah98/ShifftBuddy",
     },
   ];
 

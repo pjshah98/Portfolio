@@ -4,12 +4,12 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      title: "To-do list App",
+      title: "Plothole",
       description:
-        "Built a simple and interactive task management app to help users organize their tasks efficiently. Implemented state management to add, edit and delete tasks dynamically. Designed an intuitive user-friendly UI using Tailwind CSS for modern styling.",
-      techStack: ["React", "TailwindCSS", "HTML"],
-      githubLink: "https://github.com/pjshah98",
-      livelink: "https://live-link.com",
+        "A community site for spotting plot holes in movies and TV. Browse cases, submit your findings, vote and comment on others' investigations, and earn XP to climb the ranks. Includes auth (JWT, bcrypt), TMDB movie catalog, and a full Express backend.",
+      techStack: ["React 19", "Vite", "React Router", "Tailwind CSS 4", "Node.js", "Express", "JWT"],
+      githubLink: "https://github.com/pjshah98/Plothole",
+      livelink: "https://plothole-five.vercel.app/",
     },
     {
       title: "News App",

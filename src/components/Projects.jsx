@@ -24,13 +24,13 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="snap-start min-h-screen flex flex-col justify-center py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-6xl xl:max-w-7xl 2xl:max-w-[88rem] mx-auto w-full"
+      className="snap-start min-h-screen flex flex-col justify-center py-10 sm:py-12 lg:py-16 xl:py-20 2xl:py-24 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-6xl xl:max-w-7xl 2xl:max-w-[88rem] mx-auto w-full"
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center lg:text-left mb-8 sm:mb-10 lg:mb-12 xl:mb-14 2xl:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center lg:text-left mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-14">
         my projects 🛠️
       </h2>
 
-      <div className="grid gap-6 sm:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 lg:grid-cols-2 w-full">
+      <div className="grid gap-4 sm:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 lg:grid-cols-2 w-full">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

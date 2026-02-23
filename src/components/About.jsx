@@ -5,39 +5,39 @@ const About = () => {
     return (
         <div
             id="about"
-            className="flex flex-col lg:flex-row relative items-center snap-start min-h-screen py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-6xl xl:max-w-7xl 2xl:max-w-[88rem] mx-auto"
+            className="flex flex-col lg:flex-row relative items-center snap-start min-h-screen py-10 sm:py-12 lg:py-16 xl:py-20 2xl:py-24 gap-6 lg:gap-10 xl:gap-12 2xl:gap-14 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-6xl xl:max-w-7xl 2xl:max-w-[88rem] mx-auto"
         >
             {/* Profile Image + Social Icons (stacked: picture then icons directly below) */}
             <div className="flex flex-col items-center shrink-0">
-                <div className="bg-white/10 backdrop-blur-2xl p-2 sm:p-4 lg:p-5 xl:p-6 rounded-full shadow-lg border border-white/20">
+                <div className="bg-white/10 backdrop-blur-2xl p-1.5 sm:p-3 lg:p-4 xl:p-5 rounded-full shadow-lg border border-white/20">
                     <img
                         src="/pj.PNG"
                         alt="Prince Jung Shah"
-                        className="rounded-full w-[200px] h-[200px] min-[400px]:w-[240px] min-[400px]:h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[360px] lg:h-[360px] xl:w-[420px] xl:h-[420px] 2xl:w-[480px] 2xl:h-[480px] max-w-full object-[80%_20%] object-cover"
+                        className="rounded-full w-[180px] h-[180px] min-[400px]:w-[220px] min-[400px]:h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] xl:w-[360px] xl:h-[360px] 2xl:w-[400px] 2xl:h-[400px] max-w-full object-[80%_20%] object-cover"
                     />
                 </div>
-                <div className="flex justify-center gap-5 sm:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 mt-4">
+                <div className="flex justify-center gap-4 sm:gap-5 lg:gap-6 xl:gap-8 2xl:gap-10 mt-3">
                     <a href="https://github.com/pjshah98" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
-                        <FaGithub className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-gray-700 hover:text-black transition" />
+                        <FaGithub className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-gray-700 hover:text-black transition" />
                     </a>
                     <a href="https://www.linkedin.com/in/prince-jung-shah-41460133a/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
-                        <FaLinkedin className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-blue-600 hover:text-blue-800 transition" />
+                        <FaLinkedin className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-blue-600 hover:text-blue-800 transition" />
                     </a>
                     <a href="https://www.instagram.com/p.r1nce_/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
-                        <FaInstagram className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-blue-400 hover:text-blue-600 transition" />
+                        <FaInstagram className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-blue-400 hover:text-blue-600 transition" />
                     </a>
                     <a href="mailto:princejshah1@email.com" className="hover:opacity-80 transition">
-                        <FaEnvelope className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-red-500 hover:text-red-600 transition" />
+                        <FaEnvelope className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-red-500 hover:text-red-600 transition" />
                     </a>
                 </div>
             </div>
 
             {/* Text Info */}
-            <div className="info flex flex-col gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mt-4 lg:mt-0 lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center lg:text-left font-bold text-gray-900">
+            <div className="info flex flex-col gap-3 sm:gap-4 lg:gap-6 xl:gap-8 mt-3 lg:mt-0 lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center lg:text-left font-bold text-gray-900">
                     a little bit <br /> about me
                 </h1>
-                <p className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-justify lg:text-left text-gray-700 leading-relaxed">
+                <p className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-justify lg:text-left text-gray-700 leading-relaxed">
                     I’m an aspiring full-stack developer with a strong foundation in frontend development and a growing curiosity for backend technologies. I enjoy creating clean, responsive interfaces that offer smooth user experiences and bring ideas to life through code.
                     <br /><br />
                     My journey in tech is driven by a love for problem-solving and a desire to build meaningful digital tools. I’m always exploring new concepts, frameworks, and best practices to sharpen my skills and expand my capabilities.

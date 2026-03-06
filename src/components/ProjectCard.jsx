@@ -1,9 +1,29 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const ProjectCard = ({ title, description, techStack, githubLink, livelink }) => {
+const ProjectCard = ({ title, description, techStack, githubLink, livelink, image }) => {
   return (
-    <div className="bg-white/10 backdrop-blur-xl p-3 sm:p-4 lg:p-5 xl:p-6 2xl:p-8 rounded-xl shadow-lg border border-white/20 transition hover:scale-[1.02] min-w-0">
+    <div className="bg-white/10 backdrop-blur-xl overflow-hidden rounded-xl shadow-lg border border-white/20 transition hover:scale-[1.02] min-w-0 flex flex-col">
+      {image && (
+        (livelink || githubLink) ? (
+          <a href={livelink || githubLink} target="_blank" rel="noopener noreferrer" className="block shrink-0 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-t-xl overflow-hidden">
+            <img
+              src={image}
+              alt={`${title} project screenshot`}
+              className="w-full h-56 sm:h-64 lg:h-80 xl:h-96 object-cover object-top"
+            />
+          </a>
+        ) : (
+          <div className="shrink-0 overflow-hidden">
+            <img
+              src={image}
+              alt={`${title} project screenshot`}
+              className="w-full h-56 sm:h-64 lg:h-80 xl:h-96 object-cover object-top"
+            />
+          </div>
+        )
+      )}
+      <div className="p-3 sm:p-4 lg:p-5 xl:p-6 2xl:p-8 flex flex-col flex-1">
       <div className="flex justify-between items-start gap-2">
         <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl font-bold break-words">{title}</h3>
         <div className="flex gap-2 sm:gap-3 text-base sm:text-lg xl:text-xl shrink-0">
@@ -29,6 +49,7 @@ const ProjectCard = ({ title, description, techStack, githubLink, livelink }) =>
             {tech}
           </span>
         ))}
+      </div>
       </div>
     </div>
   );

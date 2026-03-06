@@ -10,6 +10,7 @@ const Projects = () => {
       techStack: ["React 19", "Vite", "React Router", "Tailwind CSS 4", "Node.js", "Express", "JWT"],
       githubLink: "https://github.com/pjshah98/Plothole",
       livelink: "https://plothole-five.vercel.app/",
+      image: "/images/projects/plothole.png",
     },
     {
       title: "ShifftBuddy",
@@ -18,6 +19,7 @@ const Projects = () => {
       techStack: ["React 19", "JavaScript", "Vite", "IndexedDB", "Firebase", "Firestore"],
       githubLink: "https://github.com/pjshah98/ShifftBuddy",
       livelink: "https://github.com/pjshah98/ShifftBuddy",
+      image: "/images/projects/ShifftBuddy.png",
     },
   ];
 

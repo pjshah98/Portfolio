@@ -6,18 +6,20 @@ const Skills = () => {
     const skills = [
         {
             title: "Languages",
-            stack: ["Javascript", "C", "C++"],
-
+            stack: ["JavaScript", "Python"],
         },
         {
             title: "Frontend",
-            stack: ["React", "React Router DOM", "Tailwind CSS", "HTML", "CSS"]
+            stack: ["React", "Vite", "React Router", "Tailwind CSS", "HTML", "CSS"],
         },
         {
-            title: "Dev tools and Platforms",
-            stack: ["Git", "Github", "VsCode"]
-        }
-
+            title: "Backend & APIs",
+            stack: ["Node.js", "Express", "Flask", "JWT"],
+        },
+        {
+            title: "Data & platforms",
+            stack: ["Firebase", "Firestore", "IndexedDB", "pandas", "scikit-learn", "Git", "GitHub"],
+        },
     ]
     return (
         <section id='skills'

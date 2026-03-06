@@ -4,6 +4,15 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   const projects = [
     {
+      title: "Virtual Stylist AI",
+      description:
+        "AI-powered outfit recommendation platform with a modern glassmorphism UI. ML-ranked recommendations via scikit-learn, color harmony engine (complementary/analogous/monochromatic), favorites saved to localStorage, and dark mode. Flask backend with recommendation API.",
+      techStack: ["Python", "Flask", "scikit-learn", "pandas", "HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/pjshah98/Virtual_Stylist_AI",
+      livelink: "https://github.com/pjshah98/Virtual_Stylist_AI",
+      image: "/images/projects/Virtual_Stylist_AI.png",
+    },
+    {
       title: "Plothole",
       description:
         "A community site for spotting plot holes in movies and TV. Browse cases, submit your findings, vote and comment on others' investigations, and earn XP to climb the ranks. Includes auth (JWT, bcrypt), TMDB movie catalog, and a full Express backend.",

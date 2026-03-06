@@ -10,7 +10,7 @@ const ProjectCard = ({ title, description, techStack, githubLink, livelink, imag
             <img
               src={image}
               alt={`${title} project screenshot`}
-              className="w-full h-56 sm:h-64 lg:h-80 xl:h-96 object-cover object-top"
+              className="w-full h-44 sm:h-52 lg:h-64 xl:h-72 object-cover object-top"
             />
           </a>
         ) : (
@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, techStack, githubLink, livelink, imag
             <img
               src={image}
               alt={`${title} project screenshot`}
-              className="w-full h-56 sm:h-64 lg:h-80 xl:h-96 object-cover object-top"
+              className="w-full h-44 sm:h-52 lg:h-64 xl:h-72 object-cover object-top"
             />
           </div>
         )

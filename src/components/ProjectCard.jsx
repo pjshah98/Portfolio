@@ -5,7 +5,7 @@ const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
 const DURATION_MS = 850;
 const HOVER_DELAY_MS = 350; // delay before morph starts on hover (no delay when leaving)
 
-const ProjectCard = ({ title, description, techStack, githubLink, livelink, image }) => {
+const ProjectCard = ({ title, description, techStack, githubLink, livelink, image, eagerLoadImage = false }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isRevealed, setIsRevealed] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -78,7 +78,8 @@ const ProjectCard = ({ title, description, techStack, githubLink, livelink, imag
               alt={`${title} project screenshot`}
               className="w-full h-full object-cover object-top"
               draggable={false}
-              loading="lazy"
+              loading={eagerLoadImage ? "eager" : "lazy"}
+              decoding="async"
               style={{
                 transform: showImage ? 'scale(1)' : 'scale(1.05)',
                 opacity: showImage ? 1 : 0,

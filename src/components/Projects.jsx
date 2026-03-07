@@ -43,7 +43,7 @@ const Projects = () => {
 
       <div className="grid gap-4 sm:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 lg:grid-cols-2 w-full">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} {...project} eagerLoadImage={index < 2} />
         ))}
       </div>
     </section>

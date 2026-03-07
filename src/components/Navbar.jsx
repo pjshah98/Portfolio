@@ -13,6 +13,19 @@ export default function Navbar() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const handleNavClick = (e, href) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.slice(1);
+      const target = document.getElementById(id);
+      const main = document.querySelector('main');
+      if (target && main) {
+        main.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+      }
+      closeMenu();
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white/20 backdrop-blur-sm shadow-lg z-50 border-b border-white/20">
       <div className="max-w-6xl mx-auto px-4 py-2 flex flex-row justify-between items-center text-sm lg:text-base">
@@ -22,7 +35,7 @@ export default function Navbar() {
         <ul className="navbar-desktop-links flex max-md:hidden flex-shrink-0 flex-wrap gap-3 md:gap-5 lg:gap-6 text-gray-800 font-medium items-center">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              <a href={href} className="hover:text-blue-600 transition-colors">{label}</a>
+              <a href={href} className="hover:text-blue-600 transition-colors" onClick={(e) => handleNavClick(e, href)}>{label}</a>
             </li>
           ))}
         </ul>
@@ -45,7 +58,7 @@ export default function Navbar() {
           <ul className="flex flex-col gap-0.5 px-4 py-2 text-gray-800 font-medium">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
-                <a href={href} className="block py-2 px-2 hover:text-blue-600 rounded-lg hover:bg-white/30 text-sm" onClick={closeMenu}>
+                <a href={href} className="block py-2 px-2 hover:text-blue-600 rounded-lg hover:bg-white/30 text-sm" onClick={(e) => handleNavClick(e, href)}>
                   {label}
                 </a>
               </li>
